@@ -1,0 +1,32 @@
+{
+  "name": "whatsapp-ai-agent-backend",
+  "version": "1.0.0",
+  "description": "Multi-tenant WhatsApp AI Sales Agent - Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "worker": "node src/queue/worker.js",
+    "seed": "node scripts/seed.js",
+    "simulate": "node scripts/simulate.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --runInBand",
+    "test:unit": "jest tests/unit --runInBand",
+    "test:integration": "jest tests/integration --runInBand"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcryptjs": "^2.4.3",
+    "bullmq": "^5.13.0",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.0",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.7.0",
+    "winston": "^3.15.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

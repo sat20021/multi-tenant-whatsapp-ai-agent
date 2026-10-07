@@ -1,0 +1,13 @@
+{
+  "name": "digitalonebox-whatsapp-ai-agent",
+  "version": "1.0.0",
+  "description": "Multi-Tenant WhatsApp AI Sales Agent System",
+  "scripts": {
+    "seed": "cd backend && npm run seed",
+    "simulate": "cd backend && npm run simulate",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:worker": "cd backend && npm run worker",
+    "dev:ai": "cd ai-service && uvicorn app.main:app --port 8000 --reload",
+    "dev:frontend": "cd frontend && npm run dev"
+  }
+}
